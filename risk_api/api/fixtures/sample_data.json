@@ -1,0 +1,167 @@
+[
+  {
+    "model": "api.risktype",
+    "pk": 1,
+    "fields": {
+      "name": "Sports Tournament"
+    }
+  }, {
+    "model": "api.risktype",
+    "pk": 2,
+    "fields": {
+      "name": "Intellectual Property Liability"
+    }
+  }, {
+    "model": "api.datatype",
+    "pk": 1,
+    "fields": {
+      "name": "text"
+    }
+  }, {
+    "model": "api.datatype",
+    "pk": 2,
+    "fields": {
+      "name": "number"
+    }
+  }, {
+    "model": "api.datatype",
+    "pk": 3,
+    "fields": {
+      "name": "date"
+    }
+  }, {
+    "model": "api.datatype",
+    "pk": 4,
+    "fields": {
+      "name": "enum"
+    }
+  }, {
+    "model": "api.field",
+    "pk": 1,
+    "fields": {
+      "risk_type_id": 1,
+      "data_type_id": 1,
+      "name": "Description"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 1,
+    "fields": {
+      "field_id": 1,
+      "key": "max_lenght",
+      "value": 64
+    }
+  }, {
+    "model": "api.field",
+    "pk": 2,
+    "fields": {
+      "risk_type_id": 1,
+      "data_type_id": 2,
+      "name": "Dollar Amount"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 2,
+    "fields": {
+      "field_id": 2,
+      "key": "decimal_places",
+      "value": 2
+    }
+  }, {
+    "model": "api.field",
+    "pk": 3,
+    "fields": {
+      "risk_type_id": 1,
+      "data_type_id": 3,
+      "name": "Coverage Expiration"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 3,
+    "fields": {
+      "field_id": 3,
+      "key": "max_value",
+      "value": "2050-01-31"
+    }
+  }, {
+    "model": "api.field",
+    "pk": 4,
+    "fields": {
+      "risk_type_id": 1,
+      "data_type_id": 4,
+      "name": "Modality"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 4,
+    "fields": {
+      "field_id": 4,
+      "key": "options",
+      "value": "[{\"slug\": \"golf\", \"name\": \"Golf\"}, {\"slug\": \"table-tenis\", \"name\": \"Table Tennis\"}]"
+    }
+  }, {
+    "model": "api.field",
+    "pk": 5,
+    "fields": {
+      "risk_type_id": 2,
+      "data_type_id": 1,
+      "name": "Description"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 5,
+    "fields": {
+      "field_id": 5,
+      "key": "max_lenght",
+      "value": 1024
+    }
+  }, {
+    "model": "api.field",
+    "pk": 6,
+    "fields": {
+      "risk_type_id": 2,
+      "data_type_id": 2,
+      "name": "Dollar Amount"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 6,
+    "fields": {
+      "field_id": 6,
+      "key": "decimal_places",
+      "value": 2
+    }
+  }, {
+    "model": "api.field",
+    "pk": 7,
+    "fields": {
+      "risk_type_id": 1,
+      "data_type_id": 3,
+      "name": "Coverage Expiration"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 7,
+    "fields": {
+      "field_id": 7,
+      "key": "max_value",
+      "value": "2050-01-31"
+    }
+  }, {
+    "model": "api.field",
+    "pk": 8,
+    "fields": {
+      "risk_type_id": 2,
+      "data_type_id": 4,
+      "name": "Industry"
+    }
+  }, {
+    "model": "api.metafield",
+    "pk": 8,
+    "fields": {
+      "field_id": 8,
+      "key": "options",
+      "value": "[{\"slug\": \"software\", \"name\": \"Software Development\"}, {\"slug\": \"music\", \"name\": \"Music\"}]"
+    }
+  } 
+]
