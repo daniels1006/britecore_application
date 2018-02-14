@@ -1,3 +1,6 @@
+# Statics
+/static/
+
 # SQLite database
 db.sqlite3
 

@@ -25,7 +25,11 @@ SECRET_KEY = 'b$zgp6x0t32zec8si@l##e&0thghqi@3m367o7&yp46$eo23c^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'britecore.elevential.com',
+    'api.britecore.elevential.com',
+    'localhost'
+]
 
 
 # Application definition
@@ -131,3 +135,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
