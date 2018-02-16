@@ -135,7 +135,7 @@
     "model": "api.field",
     "pk": 7,
     "fields": {
-      "risk_type_id": 1,
+      "risk_type_id": 2,
       "data_type_id": 3,
       "name": "Coverage Expiration"
     }
