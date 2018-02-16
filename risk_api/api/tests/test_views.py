@@ -17,3 +17,10 @@ class GetRiskType(APITestCase):
         serializer = RiskTypeSerializer(risk_type)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data, serializer.data)
+
+    def test_get_all_risk_types(self):
+        response = self.client.get('/risk_type/')
+        risk_types = RiskType.objects.all()
+        serializer = RiskTypeSerializer(risk_types, many=True)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data, serializer.data)

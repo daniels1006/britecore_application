@@ -20,8 +20,6 @@ class MetaFieldSerializer(serializers.ModelSerializer):
 class FieldSerializer(serializers.ModelSerializer):
     meta = serializers.SerializerMethodField()
     data_type = serializers.ReadOnlyField(source='data_type.name')
-    # risk_type_id = serializers.PrimaryKeyRelatedField(
-    #     queryset=RiskType.objects.all(), source='risk_type.id')
 
     def get_meta(self, obj):
         metas = []
