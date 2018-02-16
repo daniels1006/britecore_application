@@ -25,7 +25,9 @@ class DataType(models.Model):
 
 
 class Field(models.Model):
-    risk_type = models.ForeignKey('api.RiskType', on_delete=models.DO_NOTHING)
+    risk_type = models.ForeignKey('api.RiskType',
+                                  on_delete=models.DO_NOTHING,
+                                  related_name='fields')
     data_type = models.ForeignKey('api.DataType', on_delete=models.DO_NOTHING)
     name = models.CharField(max_length=64)
 
